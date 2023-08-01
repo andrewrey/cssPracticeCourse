@@ -1,14 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 #product-overview {
   background: #ff1b68;
 }
 
-h1 {
+#product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
 }
 
 .section-title {
   color: #2ddf5c;
+  font-family: inherit;
 }
