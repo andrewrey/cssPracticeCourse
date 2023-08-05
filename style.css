@@ -42,6 +42,22 @@ body {
 
 .main-nav__item {
   display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  color: #0e4f1f;
+  text-decoration: none;
+}
+
+/* .main-nav__item a::after {
+  content: " (Link)";
+  color: red;
+} */
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
 }
 
 #product-overview {
@@ -60,3 +76,8 @@ body {
   color: #2ddf5c;
   font-family: inherit;
 }
+
+/* #plans p::first-letter {
+  font-size: 50px;
+  color: red;
+} */
