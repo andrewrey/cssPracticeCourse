@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap");
 
 #product-overview {
-  background: url("freedom.jpg") 0% 30% / cover;
+  background: url("images/freedom.jpg") 0% 30% / cover;
   /* background-position: 0% 30%; */
   /* background-size: cover; */
   background-repeat: no-repeat;
