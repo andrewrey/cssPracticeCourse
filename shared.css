@@ -22,7 +22,7 @@ body {
 
 .main-header {
   width: 100%;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   background-color: #2ddf5c;
   position: fixed;
   z-index: 2;
@@ -34,7 +34,7 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.375rem;
   display: inline-block;
   width: 22px;
 }
@@ -63,20 +63,20 @@ body {
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-nav__item a {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  padding-bottom: 3px 0;
+  padding-bottom: 0.1875rem 0;
 }
 
 .main-nav__item--cta a {
   color: white;
   background-color: #ff1b68;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
@@ -100,8 +100,8 @@ body {
 
 .main-footer {
   background: black;
-  padding: 32px;
-  margin-top: 42px;
+  padding: 2rem;
+  margin-top: 2.625rem;
 }
 
 .main-footer__links {
@@ -113,7 +113,7 @@ body {
 
 .main-footer__link {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-footer__link a {
@@ -131,7 +131,7 @@ body {
   color: white;
   font: inherit;
   border: 1.5px solid #0e4f1f;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
