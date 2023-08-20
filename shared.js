@@ -7,15 +7,17 @@ let mobileNav = document.querySelector(".mobile-nav");
 
 let backdropAndModalShowOrHide = () => {
   console.log("click");
-  if (backdrop.style.display === "block") {
-    backdrop.style.display = "none";
-    modal.style.display = "none";
-    if (mobileNav.style.display === "block") {
-      mobileNav.style.display = "none";
+  if (backdrop.classList.contains("open")) {
+    backdrop.classList.remove("open");
+    if (modal) {
+      modal.classList.remove("open");
+    }
+    if (mobileNav.classList.contains("open")) {
+      mobileNav.classList.remove("open");
     }
   } else {
-    backdrop.style.display = "block";
-    modal.style.display = "block";
+    backdrop.classList.add("open");
+    modal.classList.add("open");
   }
 };
 
@@ -25,10 +27,12 @@ selectPlanButton.forEach((btn) => {
 
 backdrop.addEventListener("click", backdropAndModalShowOrHide);
 
-modalNoButton.addEventListener("click", backdropAndModalShowOrHide);
+if (modalNoButton) {
+  modalNoButton.addEventListener("click", backdropAndModalShowOrHide);
+}
 
 toggleButton.addEventListener("click", () => {
   console.log("click");
-  mobileNav.style.display = "block";
-  backdrop.style.display = "block";
+  mobileNav.classList.add("open");
+  backdrop.classList.add("open");
 });
