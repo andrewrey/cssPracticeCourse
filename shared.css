@@ -41,6 +41,7 @@ body::-webkit-scrollbar {
   font-size: 1.375rem;
   display: inline-block;
   width: 22px;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -52,11 +53,33 @@ body::-webkit-scrollbar {
   vertical-align: middle;
 }
 
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
 .main-nav {
   display: inline-block;
   vertical-align: middle;
   text-align: right;
-  width: calc(100% - 74px);
+  width: calc(100% - 122px);
 }
 
 .main-nav__items {
@@ -70,14 +93,16 @@ body::-webkit-scrollbar {
   margin: 0 1rem;
 }
 
-.main-nav__item a {
+.main-nav__item a,
+.mobile-nav__item a {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
   padding-bottom: 0.1875rem 0;
 }
 
-.main-nav__item--cta a {
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
   color: white;
   background-color: #ff1b68;
   padding: 0.5rem 1rem;
@@ -96,7 +121,9 @@ body::-webkit-scrollbar {
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
   color: #ff1b68;
   background-color: white;
   border: none;
@@ -128,6 +155,34 @@ body::-webkit-scrollbar {
 .main-footer__link a:hover,
 .main-footer__link a:active {
   color: #ccc;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
 }
 
 .button {
