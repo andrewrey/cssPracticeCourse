@@ -63,6 +63,12 @@ body::-webkit-scrollbar {
   vertical-align: middle;
 }
 
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+}
+
 .toggle-button:focus {
   outline: none;
 }
@@ -76,10 +82,16 @@ body::-webkit-scrollbar {
 }
 
 .main-nav {
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   text-align: right;
   width: calc(100% - 122px);
+}
+
+@media (min-width: 40rem) {
+  .main-nav {
+    display: inline-block;
+  }
 }
 
 .main-nav__items {
