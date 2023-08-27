@@ -64,12 +64,6 @@ body::-webkit-scrollbar {
   vertical-align: middle;
 }
 
-@media (min-width: 40rem) {
-  .toggle-button {
-    display: none;
-  }
-}
-
 .toggle-button:focus {
   outline: none;
 }
@@ -87,12 +81,6 @@ body::-webkit-scrollbar {
   vertical-align: middle;
   text-align: right;
   width: calc(100% - 52px);
-}
-
-@media (min-width: 40rem) {
-  .main-nav {
-    display: inline-block;
-  }
 }
 
 .main-nav__items {
@@ -221,4 +209,13 @@ body::-webkit-scrollbar {
 
 .open {
   display: block !important;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+  .main-nav {
+    display: inline-block;
+  }
 }
