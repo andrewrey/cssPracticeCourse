@@ -105,3 +105,8 @@ main {
     border-right: 4px solid #0e4f1f;
   }
 }
+
+
+#test {
+  border: #0e4f1f;
+}
