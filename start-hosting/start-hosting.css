@@ -60,11 +60,12 @@
 .signup-form button[type="submit"] {
   display: block;
   margin: 1rem;
+  width: auto;
 }
 
 @media (min-width: 40rem) {
   .signup-form {
     margin: auto;
-    width: 25rem;
+    max-width: 25rem;
   }
 }
