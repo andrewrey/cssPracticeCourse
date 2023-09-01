@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 .background {
   background: url("../images/plans-background.jpg") center/cover;
   filter: grayscale(0.7);
