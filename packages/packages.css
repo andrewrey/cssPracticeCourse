@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .background {
   background: url("../images/plans-background.jpg") center/cover;
   filter: grayscale(0.7);
@@ -79,6 +81,7 @@ main {
   padding: 1rem;
   font-size: 1.2rem;
   background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 #premium .package__title {
