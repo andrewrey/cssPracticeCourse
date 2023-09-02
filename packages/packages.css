@@ -80,6 +80,8 @@ main {
   font-size: 1.2rem;
   background-color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 #premium .package__title {
