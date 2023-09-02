@@ -88,10 +88,12 @@ main {
   border: 1px solid #0e4f1f;
   color: #0e4f1f;
   padding: 1rem;
-  font-size: 1.2rem;
   background-color: white;
-  font-family: "AnonymousPro", sans-serif;
-  font-weight: 700;
+  /* font-size: 1.2rem; */
+  /* font-family: "AnonymousPro", sans-serif; */
+  /* font-weight: 700; */
+  font: 700 1.2rem "AnonymousPro", sans-serif;
+  /*font-style font-variant font-wieght font-size/line-height font-family */
 }
 
 #premium .package__title {
