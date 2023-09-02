@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("AnonymousPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("AnonymousPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
 .background {
   background: url("../images/plans-background.jpg") center/cover;
   filter: grayscale(0.7);
@@ -79,9 +90,8 @@ main {
   padding: 1rem;
   font-size: 1.2rem;
   background-color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
+  font-family: "AnonymousPro", sans-serif;
+  font-weight: 700;
 }
 
 #premium .package__title {
