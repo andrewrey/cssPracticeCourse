@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
   padding: 0.5rem 1rem;
   background-color: #2ddf5c;
   position: fixed;
-  z-index: 2;
+  z-index: 60;
   top: 0;
   left: 0;
   display: flex;

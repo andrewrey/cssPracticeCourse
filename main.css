@@ -32,11 +32,6 @@
   text-align: center;
 }
 
-/* #plans > div {
-  width: 100%;
-  text-align: center;
-} */
-
 .plan {
   background: #d5ffdc;
   text-align: center;
@@ -169,20 +164,26 @@
 
 @media (min-width: 40rem) {
   .plan {
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
     min-width: 13rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 28rem;
   }
 
   #plans > div {
-    text-align: center;
-    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 50;
   }
   #product-overview {
     background-position: 0% 20%;
