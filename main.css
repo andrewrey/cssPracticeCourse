@@ -174,7 +174,6 @@
   }
 
   #plans > div {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,10 +192,13 @@
     font-size: 3rem;
   }
 
+  .key-features__list_items {
+    display: flex;
+    justify-content: center;
+  }
+
   .key-features__list_item {
-    display: inline-block;
     width: 30%;
     max-width: 25rem;
-    vertical-align: top;
   }
 }
