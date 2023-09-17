@@ -8,15 +8,21 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-}
-
-main {
-  min-height: calc(100vh - 4rem - 7.8125rem);
-  margin-top: 4rem;
+  display: grid;
+  grid-template-rows: 4.3rem auto fit-content(8rem);
+  grid-template-areas:
+    "head"
+    "main"
+    "foot";
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
   width: 0 !important;
+}
+
+main {
+  grid-area: main;
 }
 
 .backdrop {
@@ -61,7 +67,6 @@ body::-webkit-scrollbar {
   cursor: pointer;
   padding-top: 0;
   padding-bottom: 0;
-  vertical-align: middle;
 }
 
 .toggle-button:focus {
@@ -128,6 +133,7 @@ body::-webkit-scrollbar {
   background: black;
   padding: 2rem;
   margin-top: 2.625rem;
+  grid-area: foot;
 }
 
 .main-footer__links {
