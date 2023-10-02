@@ -27,13 +27,14 @@ main {
 
 .backdrop {
   position: fixed;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
   z-index: 100;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
-  display: none;
 }
 
 .main-header {
