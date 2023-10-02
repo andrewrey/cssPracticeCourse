@@ -100,6 +100,10 @@ main {
   margin: 0 1rem;
 }
 
+.main-nav__item--cta {
+  animation: wiggle 200ms 3s 8 alternate;
+}
+
 .main-nav__item a,
 .mobile-nav__item a {
   color: #0e4f1f;
@@ -241,5 +245,14 @@ main {
   }
   .main-footer__link {
     margin: 0 1rem;
+  }
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
   }
 }
