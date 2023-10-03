@@ -11,15 +11,22 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font: "Montserrat", sans-serif;
   margin: 0;
-  display: grid;
-  grid-template-rows: 4.3rem auto fit-content(8rem);
-  grid-template-areas:
-    "head"
-    "main"
-    "foot";
-  height: 100vh;
+  padding-top: 4.2rem;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-rows: 4.2rem auto fit-content(8rem);
+    grid-template-areas:
+      "head"
+      "main"
+      "foot";
+    height: 100vh;
+    padding-top: 0;
+  }
 }
 
 body::-webkit-scrollbar {
